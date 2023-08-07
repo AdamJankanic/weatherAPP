@@ -6,5 +6,9 @@ type ReusableFunction = {
 };
 
 export function Button({ buttonText, test }: ReusableFunction) {
-  return <button onClick={() => test()}>{buttonText}</button>;
+  return (
+    <>
+      <button onClick={() => test()}>{buttonText}</button>;
+    </>
+  );
 }

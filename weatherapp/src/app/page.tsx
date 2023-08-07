@@ -1,8 +1,8 @@
 "use client";
 
-import { Button } from "@/components/Button";
+import { Button } from "../components/Button";
 import React, { ChangeEvent } from "react";
-import { test } from "@/actions/api";
+import { test } from "../actions/api";
 
 type WeatherCurrent = {
   location: Object;
