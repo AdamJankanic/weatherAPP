@@ -3,6 +3,7 @@
 import { Button } from "../components/Button";
 import React, { ChangeEvent } from "react";
 import { test } from "../actions/api";
+import { WeatherToday } from "@/components/WeatherToday";
 
 type WeatherCurrent = {
   location: Object;
@@ -35,12 +36,12 @@ export default function Home() {
           >
             Click Me
           </button>
-          {/* <Button buttonText="Click Me Right Now !!!!!" test={test} /> */}
         </div>
 
         <div className="flex flex-col items-center gap-4 p-16">
-          <p>{JSON.stringify(data?.location)}</p>
-          {/* <p>{JSON.stringify(data?.current)}</p> */}
+          {/* <p>{JSON.stringify(data?.location)}</p> */}
+
+          <WeatherToday data={data} />
         </div>
       </div>
     </>
